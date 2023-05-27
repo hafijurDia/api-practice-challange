@@ -9,8 +9,8 @@ const showUrl = (data) => {
     const parentDiv = document.getElementById('parentdiv');
     const createEl = document.createElement('div');
     createEl.innerHTML = `
-        <h3>Congratulations! Your short Url Create</h3>
-        <a href="${data.result.full_short_link}" target="_blank">${data.result.short_link}</a>
+        <h3>Congratulations! Your short Url Created</h3>
+        <a href="${data.result.full_short_link}" target="_blank" class="fs-3">${data.result.short_link}</a>
     `
     parentDiv.appendChild(createEl);
 
